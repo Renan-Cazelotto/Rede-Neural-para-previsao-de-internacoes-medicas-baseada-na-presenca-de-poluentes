@@ -1,0 +1,7 @@
+extracao_dados_brutos/DATASUS/data/
+extracao_dados_brutos/CETESB_qualar/dados_brutos/
+extracao_dados_brutos/CETESB_qualar/cache_qualar/
+debug_resposta.html
+.env
+__pycache__/
+.ipynb_checkpoints/
