@@ -71,8 +71,8 @@ trocar isso, e uma única vez.
 ### 1. Internações (SIH/SUS, DATASUS): coleta manual
 
 **Por que a coleta é manual e os dados brutos não estão no repositório.** Precisávamos de
-contagens **diárias** de internações. Na interface atual do portal do DATASUS, em nossa consulta
-(**TODO:** data da consulta), só encontramos o SIH/SUS agregado **por mês**, o que não serve para
+contagens **diárias** de internações. Na interface atual do portal do DATASUS, em nossa consulta em
+05/11, só encontramos o SIH/SUS agregado **por mês**, o que não serve para
 prever dia a dia. A data diária de internação só existe nos microdados (AIH Reduzida), que
 obtivemos em um servidor mais antigo do DATASUS (FTP). Esse servidor é limitado: não tem busca
 nem filtros por município ou data, só um arquivo por estado e mês (o de São Paulo traz os hospitais
@@ -95,7 +95,6 @@ Passo a passo da coleta (todos os comandos dentro de `extracao_dados_brutos/DATA
    `RDSP<AA><MM>.dbc` (por exemplo, `RDSP1401.dbc` a `RDSP2006.dbc`, 78 arquivos).
    Os de 2020 servem só para completar o fim de 2019, porque a data de internação
    pode ser anterior à competência em até 6 meses.
-   > **TODO:** anotar aqui a pasta exata do FTP de onde os arquivos foram baixados.
 2. Coloque os `.dbc` em `data/raw/`.
 3. Converta para CSV (o `convert.r` lê e grava em `data/raw/`):
    ```text
@@ -123,7 +122,7 @@ Passo a passo da coleta (todos os comandos dentro de `extracao_dados_brutos/DATA
 
 O QUALAR exige um **cadastro gratuito** (https://qualar.cetesb.sp.gov.br). Cada pessoa usa o
 próprio usuário. Defina as variáveis de ambiente `QUALAR_USER` e `QUALAR_PASS` (ou digite
-quando o script perguntar); **nunca coloque senha no código ou no git**.
+quando o script perguntar);
 
 Dentro de `extracao_dados_brutos/CETESB_qualar/`, nesta ordem:
 
@@ -180,6 +179,3 @@ município, sem informação individual dos pacientes.
 - Piracicaba (cerca de 5 internações por dia) e São Paulo (cerca de 150) têm escalas muito
   diferentes: compare os modelos dentro de cada cidade, ou use o MAE relativo.
 
-## Contribuições
-
-> **TODO:** uma linha por integrante (o enunciado exige no artigo).
