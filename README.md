@@ -56,8 +56,8 @@ pode variar um pouco entre máquinas e versões de biblioteca.
         ├── baixar_qualar.py                 # login no QUALAR e download horário
         ├── processar_qualar.py              # valores diários por estação
         ├── agregar_municipio.py             # média entre as estações de cada município
-        ├── dados_diarios/                   # saída por estação (pequena; está no git)
-        ├── dados_municipio/                 # saída por município (pequena; está no git)
+        ├── dados_diarios/                   # saída por estação (gerada pelo script; não está no git)
+        ├── dados_municipio/                 # saída por município (gerada pelo script; não está no git)
         ├── dados_brutos/                    # NÃO vai para o git (CSVs horários)
         └── cache_qualar/                    # NÃO vai para o git (cache do download)
 ```
