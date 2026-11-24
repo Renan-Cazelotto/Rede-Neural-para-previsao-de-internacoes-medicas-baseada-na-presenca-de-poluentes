@@ -5,4 +5,6 @@ scikit-learn>=1.5
 matplotlib>=3.9
 python-dateutil>=2.9
 requests>=2.31
-# Para abrir o notebook fora do Colab: python -m pip install notebook
+torch>=2.3
+# torch: a versão para CPU basta; só o FINAL_problemas_respiratorios.ipynb usa
+# Para abrir os notebooks fora do Colab: python -m pip install notebook

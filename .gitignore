@@ -5,3 +5,6 @@ debug_resposta.html
 .env
 __pycache__/
 .ipynb_checkpoints/
+dados_extraidos/
+checkpoints_gru/
+checkpoints_exploracao/
